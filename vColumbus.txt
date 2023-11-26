@@ -1,0 +1,3 @@
+SELECT CONVERT(varchar(2), Month) + '/1/' + CONVERT(varchar(4), Year) AS Date, Region, Lat AS Latitud, Lon AS Longitud, Occurences, SurfTemp, NDVI, SurfPS, Dust, SoilMoisture, WindVelocity, LAI, Canopy_h2o, Transpire, brightness, confidence, bright_t31 AS Bright31, tempmax, tempmin, temp AS Temperature, feelslikemax, feelslikemin, feelslike, dew, humidity, precip AS Precipitation, 
+         precipprob AS PrecipitationChance, precipcover AS PrecipitationCover, snow, snowdepth, windgust, windspeed, winddir AS WindDirection, sealevelpressure, cloudcover, visibility, solarradiation, solarenergy, uvindex, severerisk, moonphase
+FROM  dbo.Columbus

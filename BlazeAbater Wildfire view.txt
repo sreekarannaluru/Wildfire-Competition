@@ -1,0 +1,11 @@
+SELECT Year, Month, Date = CONVERT(varchar(2), Month) + '/1/' + CONVERT(varchar(4), Year), Region, Latitud = Lat, Longitud = Lon, Occurences, SurfTemp, NDVI, SurfPS, Dust, SoilMoisture, WindVelocity, LAI, Canopy_h2o, Transpire, Brightness = brightness, Confidence = confidence, Bright31 = bright_t31, TempMax = tempmax, TempMin = tempmin, Temperature = temp, 
+         FeelsLikeMax = feelslikemax, FeelsLikeMin = feelslikemin, FeelsLike = feelslike, TempMaxF = (tempmax * (9 / 5)) + 32, TempMinF = (tempmin * (9 / 5)) + 32, TemperatureF = (temp * (9 / 5)) + 32, FeelsLikeMaxF = (feelslikemax * (9 / 5)) + 32, FeelsLikeMinF = (feelslikemin * (9 / 5)) + 32, FeelsLikeF = (feelslike * (9 / 5)) + 32, Dew = dew, Humidity = humidity, Precipitation = precip, 
+         PrecipitationChance = precipprob, PrecipitationCover = precipcover, Snow = snow, SnowDepth = snowdepth, WindGust = windgust, WindSpeed = windspeed, WindDirection = winddir, SeaLevelPressure = sealevelpressure, CloudCover = cloudcover, Visibility = visibility, SolarRadiation = solarradiation, SolarEnergy = solarenergy, UVIndex = uvindex, SevereRisk = severerisk, 
+         Moonphase = moonphase
+FROM  Columbus
+UNION ALL
+SELECT Year, Month, Date = CONVERT(varchar(2), Month) + '/1/' + CONVERT(varchar(4), Year), Region, Latitud = Lat, Longitud = Lon, Occurences, SurfTemp, NDVI, SurfPS, Dust, SoilMoisture, WindVelocity, LAI, Canopy_h2o, Transpire, Brightness = brightness, Confidence = confidence, Bright31 = bright_t31, TempMax = tempmax, TempMin = tempmin, Temperature = temp, 
+         FeelsLikeMax = feelslikemax, FeelsLikeMin = feelslikemin, FeelsLike = feelslike, TempMaxF = (tempmax * (9 / 5)) + 32, TempMinF = (tempmin * (9 / 5)) + 32, TemperatureF = (temp * (9 / 5)) + 32, FeelsLikeMaxF = (feelslikemax * (9 / 5)) + 32, FeelsLikeMinF = (feelslikemin * (9 / 5)) + 32, FeelsLikeF = (feelslike * (9 / 5)) + 32, Dew = dew, Humidity = humidity, Precipitation = precip, 
+         PrecipitationChance = precipprob, PrecipitationCover = precipcover, Snow = snow, SnowDepth = snowdepth, WindGust = windgust, WindSpeed = windspeed, WindDirection = winddir, SeaLevelPressure = sealevelpressure, CloudCover = cloudcover, Visibility = visibility, SolarRadiation = solarradiation, SolarEnergy = solarenergy, UVIndex = uvindex, SevereRisk = severerisk, 
+         Moonphase = moonphase
+FROM  Denver
